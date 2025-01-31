@@ -1041,7 +1041,9 @@ header {
     margin: 5vw;
 
     >div {
-        /* grid-area: header / gutter-left / header / gutter-right; */
+        display: grid;
+        grid-template-columns: subgrid;
+        grid-template-rows: subgrid;
         background-color: light-dark(var(--color-static-light-6), var(--color-static-dark-4));
         /* border: solid 20px light-dark(var(--color-accent-light-primary), var(--color-accent-dark-primary)); */
         /* border-left-color: light-dark(var(--color-accent-light-primary), var(--color-accent-dark-primary)); */
@@ -1052,11 +1054,11 @@ header {
         >picture {
 
             grid-area: header / gutter-left / header / gutter-right;
-    
+
         }
-    
+
         >h1 {
-    
+
             z-index: 3;
             align-self: end;
             max-width: 40vw;
@@ -1065,9 +1067,9 @@ header {
             line-height: 0.85;
             margin-bottom: 0;
             grid-column-start: 1;
-    
+
         }
-        
+
     }
 
 
