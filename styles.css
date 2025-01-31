@@ -1048,26 +1048,29 @@ header {
         /* border-left-style: solid; */
         z-index: 1;
         /* animation: 2.5s ease-out 0s forwards image-reveal; */
+
+        >picture {
+
+            grid-area: header / gutter-left / header / gutter-right;
+    
+        }
+    
+        >h1 {
+    
+            z-index: 3;
+            align-self: end;
+            max-width: 40vw;
+            font-size: clamp(3rem, 8vh, 10vh);
+            padding: var(--space-medium);
+            line-height: 0.85;
+            margin-bottom: 0;
+            grid-column-start: 1;
+    
+        }
+        
     }
 
-    >picture {
 
-        grid-area: header / gutter-left / header / gutter-right;
-
-    }
-
-    >h1 {
-
-        z-index: 3;
-        align-self: end;
-        max-width: 40vw;
-        font-size: clamp(3rem, 8vh, 10vh);
-        padding: var(--space-medium);
-        line-height: 0.85;
-        margin-bottom: 0;
-        grid-column-start: 1;
-
-    }
 
 }
 
