@@ -1053,7 +1053,7 @@ header {
 
         >picture {
 
-            grid-area: header / gutter-left / header / gutter-right;
+            /* grid-area: header / gutter-left / header / gutter-right; */
 
         }
 
