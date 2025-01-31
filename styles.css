@@ -1032,15 +1032,15 @@
 header {
 
     display: grid;
-    grid-template-columns: subgrid;
-    grid-template-rows: subgrid;
+    /* grid-template-columns: subgrid;
+    grid-template-rows: subgrid; */
+    grid-template: auto / repeat(2, 1fr);
+    gap: var(--space-medium);
     grid-area: header / gutter-left / header / gutter-right;
     color: light-dark(var(--color-accent-opaque-dark-secondary), var(--color-accent-light-secondary));
     margin: 5vw;
 
     >div {
-        grid-template: auto / repeat(2, 1fr);
-        gap: var(--space-medium);
         /* grid-area: header / gutter-left / header / gutter-right; */
         background-color: light-dark(var(--color-static-light-2), var(--color-static-dark-4));
         /* border: solid 20px light-dark(var(--color-accent-light-primary), var(--color-accent-dark-primary)); */
