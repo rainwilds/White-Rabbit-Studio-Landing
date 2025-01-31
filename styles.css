@@ -1039,13 +1039,13 @@ header {
     margin: 5vw;
 
     >div {
-        grid-area: header / gutter-left / header / gutter-right;
+        /* grid-area: header / gutter-left / header / gutter-right; */
         background-color: light-dark(var(--color-static-light-2), var(--color-static-dark-4));
-        border: solid 20px light-dark(var(--color-accent-light-primary), var(--color-accent-dark-primary));
-        border-left-color: light-dark(var(--color-accent-light-primary), var(--color-accent-dark-primary));
-        border-left-style: solid;
+        /* border: solid 20px light-dark(var(--color-accent-light-primary), var(--color-accent-dark-primary)); */
+        /* border-left-color: light-dark(var(--color-accent-light-primary), var(--color-accent-dark-primary)); */
+        /* border-left-style: solid; */
         z-index: 1;
-        animation: 2.5s ease-out 0s forwards image-reveal;
+        /* animation: 2.5s ease-out 0s forwards image-reveal; */
     }
 
     >picture {
