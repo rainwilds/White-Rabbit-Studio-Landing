@@ -1042,8 +1042,8 @@ header {
 
     >div {
         display: grid;
-        grid-template-columns: subgrid;
-        grid-template-rows: subgrid;
+        /* grid-template-columns: subgrid; */
+        /* grid-template-rows: subgrid; */
         background-color: light-dark(var(--color-static-light-6), var(--color-static-dark-4));
         /* border: solid 20px light-dark(var(--color-accent-light-primary), var(--color-accent-dark-primary)); */
         /* border-left-color: light-dark(var(--color-accent-light-primary), var(--color-accent-dark-primary)); */
