@@ -1058,26 +1058,32 @@ header {
 
         }
 
-        >h1 {
+        >div {
 
-            z-index: 3;
-            align-self: end;
-            /* max-width: 40vw; */
-            /* font-size: clamp(3rem, 8vh, 10vh); */
-            padding: var(--space-small);
-            line-height: 0.85;
-            margin-bottom: 0;
-            grid-column-start: 1;
+            >h1 {
+
+                z-index: 3;
+                align-self: end;
+                /* max-width: 40vw; */
+                /* font-size: clamp(3rem, 8vh, 10vh); */
+                padding: var(--space-small);
+                line-height: 0.85;
+                margin-bottom: 0;
+                grid-column-start: 1;
+    
+            }
+    
+            >p {
+                align-content: end;
+                margin-bottom: var(--space-small);
+                background-color: var(--);
+                max-width: 70%;
+                z-index: 1;
+            }
 
         }
 
-        >p {
-            align-content: end;
-            margin-bottom: var(--space-small);
-            background-color: var(--);
-            max-width: 70%;
-            z-index: 1;
-        }
+
         
 
     }
