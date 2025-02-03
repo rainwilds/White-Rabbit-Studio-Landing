@@ -1034,6 +1034,7 @@ header {
     display: grid;
     /* grid-template-columns: subgrid;
     grid-template-rows: subgrid; */
+    /* overflow-y: scroll;  */
     grid-template: auto / repeat(2, 1fr);
     gap: var(--space-medium);
     grid-area: header / gutter-left / header / gutter-right;
@@ -1061,13 +1062,19 @@ header {
 
             z-index: 3;
             align-self: end;
-            max-width: 40vw;
-            font-size: clamp(3rem, 8vh, 10vh);
-            padding: var(--space-medium);
+            /* max-width: 40vw; */
+            /* font-size: clamp(3rem, 8vh, 10vh); */
+            padding: var(--space-small);
             line-height: 0.85;
             margin-bottom: 0;
             grid-column-start: 1;
 
+        }
+
+        >p {
+            padding: var(--space-small);
+            padding-top: 0;
+        }
         }
 
     }
