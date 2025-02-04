@@ -1062,11 +1062,11 @@ header {
 
             z-index: 2;
             display: flex;
-
-                flex-direction: column;
-                justify-content: flex-end;
-
-                padding: var(--space-small);
+            flex-direction: column;
+            padding: var(--space-small);
+            background-color: light-dark(var(--color-accent-light-primary), var(--color-accent-dark-primary));
+            height: fit-content;
+            align-self: flex-end;
 
             >h1 {
 
