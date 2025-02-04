@@ -478,11 +478,11 @@
 
     nav {
 
-        grid-area: footer;
+        /* grid-area: footer;
         grid-row-start: 1;
         align-self: end;
         grid-column-start: 5;
-        grid-column-end: -1;
+        grid-column-end: -1; */
         justify-self: end;
 
         >ul {
@@ -1040,6 +1040,11 @@ header {
     grid-area: header / gutter-left / header / gutter-right;
     color: light-dark(var(--color-accent-opaque-dark-secondary), var(--color-accent-light-secondary));
     margin: 5vw;
+
+    >div:first-of-type {
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
 
     >div {
         display: grid;
