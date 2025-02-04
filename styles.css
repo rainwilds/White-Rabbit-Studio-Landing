@@ -1572,6 +1572,7 @@ body#page-about {
 
             & {
                 mask-image: initial;
+                grid-template: auto / auto;
             }
         }
 
