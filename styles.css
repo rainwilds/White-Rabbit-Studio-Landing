@@ -484,6 +484,7 @@
         grid-column-start: 5;
         grid-column-end: -1; */
         justify-self: end;
+        align-self: end;
 
         >ul {
 
@@ -1035,8 +1036,9 @@ header {
     /* grid-template-columns: subgrid;
     grid-template-rows: subgrid; */
     /* overflow-y: scroll;  */
-    grid-template: auto / repeat(2, 1fr);
-    gap: var(--space-medium);
+    grid-template: min-content auto / repeat(2, 1fr);
+    row-gap: var(--space-small);
+    column-gap: var(--space-medium);
     grid-area: header / gutter-left / header / gutter-right;
     color: light-dark(var(--color-accent-opaque-dark-secondary), var(--color-accent-light-secondary));
     margin: 5vw;
@@ -1044,6 +1046,12 @@ header {
     >div:first-of-type {
         grid-column-start: 1;
         grid-column-end: -1;
+        background: transparent;
+
+        >h2 {
+            margin: 0;
+            max-width: min-content;
+        }
     }
 
     >div {
